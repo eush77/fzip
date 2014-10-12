@@ -1,7 +1,7 @@
 {
   "name": "fzip",
   "version": "0.0.0",
-  "description": "Zip collections and map the result at once",
+  "description": "Zip collections and map or iterate over the result at once",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
   "scripts": {
