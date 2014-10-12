@@ -1,0 +1,24 @@
+{
+  "name": "fzip",
+  "version": "0.0.0",
+  "description": "Zip collections and map the result at once",
+  "author": "Eugene Sharygin <eush77@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/eush77/fzip",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eush77/fzip"
+  },
+  "bugs": {
+    "url": "https://github.com/eush77/fzip/issues"
+  },
+  "keywords": [
+    "functional",
+    "zip",
+    "map",
+    "collection",
+    "array"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
