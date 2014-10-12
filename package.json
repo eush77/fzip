@@ -19,6 +19,8 @@
     "collection",
     "array"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "lodash.zip": "^2.4.1"
+  },
   "devDependencies": {}
 }
