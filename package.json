@@ -4,6 +4,9 @@
   "description": "Zip collections and map the result at once",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha --require should test"
+  },
   "homepage": "https://github.com/eush77/fzip",
   "repository": {
     "type": "git",
@@ -22,5 +25,8 @@
   "dependencies": {
     "lodash.zip": "^2.4.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "mocha": "^1.21.5",
+    "should": "^4.0.4"
+  }
 }
