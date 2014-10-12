@@ -1,6 +1,6 @@
 'use strict';
 
-var zip = require('lodash.zip');
+var zip = require('./zip');
 
 
 /**
@@ -8,7 +8,7 @@ var zip = require('lodash.zip');
  */
 var makeFzip = function (arrayMethod) {
   return function () {
-    if (arguments.length <= 1) {
+    if (!arguments.length) {
       return null;
     }
 
@@ -19,6 +19,10 @@ var makeFzip = function (arrayMethod) {
     if (typeof mapper != 'function') {
       collections.push(mapper);
       return zip.apply(null, collections);
+    }
+
+    if (!collections.length) {
+      return null;
     }
 
     return zip.apply(null, collections)[arrayMethod](function (items) {
