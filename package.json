@@ -1,6 +1,6 @@
 {
   "name": "fzip",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Zip collections and map or iterate over the result at once",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
@@ -23,7 +23,10 @@
     "each",
     "forEach",
     "collection",
-    "array"
+    "array",
+    "object",
+    "keys",
+    "spec"
   ],
   "dependencies": {
     "lodash.zip": "^2.4.1",
