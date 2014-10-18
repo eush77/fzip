@@ -26,7 +26,8 @@
     "array"
   ],
   "dependencies": {
-    "lodash.zip": "^2.4.1"
+    "lodash.zip": "^2.4.1",
+    "lodash.zipobject": "^2.4.1"
   },
   "devDependencies": {
     "mocha": "^1.21.5",

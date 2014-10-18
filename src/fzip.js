@@ -1,6 +1,22 @@
 'use strict';
 
-var zip = require('./zip');
+var zip = require('./zip')
+  , zipObject = require('lodash.zipobject');
+
+
+/**
+ * Make mapper function for a string spec.
+ *
+ * @arg {string} spec
+ * @return {function}
+ */
+var makeSpecMapper = function (spec) {
+  var keys = spec.split(',').map(Function.call.bind(''.trim));
+
+  return function () {
+    return zipObject(keys, arguments);
+  };
+};
 
 
 /**
@@ -14,6 +30,10 @@ var makeFzip = function (arrayMethod) {
 
     var collections = [].slice.call(arguments, 0, -1)
       , mapper = [].slice.call(arguments, -1)[0];
+
+    if (typeof mapper == 'string') {
+      mapper = makeSpecMapper(mapper);
+    }
 
     // If no callback passed, fall back to plain zip.
     if (typeof mapper != 'function') {

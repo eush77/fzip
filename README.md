@@ -11,6 +11,8 @@
 
 Zip collections and map or iterate over the result at once. Combination of `zip` and `map`, or `zip` and `forEach`.
 
+Accepts functions and string specs (to build objects from). Falls back to plain `zip`.
+
 ## Examples
 
 ```js
@@ -23,6 +25,11 @@ Zip collections and map or iterate over the result at once. Combination of `zip`
     return 2 - x;
   })
 [2, 1, 0]
+
+> fzip(['mom', 'dad', 'dog'], ['dear', 'awesome', 'joyful'], 'name, adjective')
+[ { name: 'mom', adjective: 'dear' },
+  { name: 'dad', adjective: 'awesome' },
+  { name: 'dog', adjective: 'joyful' } ]
 
 > fzip([0, 1, 2], [2, 1, 0])
 [[0, 2], [1, 1], [2, 0]]
@@ -51,6 +58,12 @@ Zip collections and map or iterate over the result at once. Combination of `zip`
 ### fzip([array]..., func)
 
 Apply `func` to arrays, passing one argument per array each time. Collect returned values in the resulting array.
+
+Return `null` if no arrays given.
+
+### fzip([array]..., spec)
+
+Construct array of objects according to a string `spec`, which must comprise object keys, separated by comma and optional whitespace. The number of keys and the number of arrays should match.
 
 Return `null` if no arrays given.
 

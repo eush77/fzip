@@ -37,6 +37,25 @@ describe('fzip', function () {
     fzip([0, 1, 2]).should.eql([[0], [1], [2]]);
     (fzip() == null).should.be.true;
   });
+
+  it('should construct objects according to a string spec', function () {
+    fzip(['mom', 'dad', 'dog'], ['dear', 'awesome', 'joyful'], 'name, adjective').should.eql([{
+      name: 'mom',
+      adjective: 'dear'
+    }, {
+      name: 'dad',
+      adjective: 'awesome'
+    }, {
+      name: 'dog',
+      adjective: 'joyful'
+    }]);
+
+    fzip(['mom', 'dad', 'dog'], 'name').should.eql([{ name: 'mom' },
+                                                    { name: 'dad' },
+                                                    { name: 'dog' }]);
+
+    (fzip('') == null).should.be.true;
+  });
 });
 
 
