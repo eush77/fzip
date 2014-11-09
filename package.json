@@ -8,13 +8,13 @@
   "scripts": {
     "test": "mocha --require should test"
   },
-  "homepage": "https://github.com/eush77/fzip",
+  "homepage": "https://github.com/eush77/node-fzip",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eush77/fzip"
+    "url": "https://github.com/eush77/node-fzip"
   },
   "bugs": {
-    "url": "https://github.com/eush77/fzip/issues"
+    "url": "https://github.com/eush77/node-fzip/issues"
   },
   "keywords": [
     "functional",
