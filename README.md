@@ -2,12 +2,12 @@
 
 [![npm](https://nodei.co/npm/fzip.png)](https://nodei.co/npm/fzip/)
 
-[travis-badge]: https://travis-ci.org/eush77/node-fzip.svg
-[travis]: https://travis-ci.org/eush77/node-fzip
-[david-badge]: https://david-dm.org/eush77/node-fzip.png
-[david]: https://david-dm.org/eush77/node-fzip
-[david-dev-badge]: https://david-dm.org/eush77/node-fzip/dev-status.png
-[david-dev]: https://david-dm.org/eush77/node-fzip#info=devDependencies
+[travis-badge]: https://travis-ci.org/eush77/fzip.svg
+[travis]: https://travis-ci.org/eush77/fzip
+[david-badge]: https://david-dm.org/eush77/fzip.png
+[david]: https://david-dm.org/eush77/fzip
+[david-dev-badge]: https://david-dm.org/eush77/fzip/dev-status.png
+[david-dev]: https://david-dm.org/eush77/fzip#info=devDependencies
 
 Zip collections and map or iterate over the result at once. Combination of `zip` and `map`, or `zip` and `forEach`.
 
