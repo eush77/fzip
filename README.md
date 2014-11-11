@@ -1,13 +1,13 @@
-# fzip [![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david] [![DevDependency Status][david-dev-badge]][david-dev]
+# fzip [![Build Status][travis-badge]][travis] [![Code Climate][codeclimate-badge]][codeclimate] [![Dependency Status][david-badge]][david]
 
 [![npm](https://nodei.co/npm/fzip.png)](https://nodei.co/npm/fzip/)
 
-[travis-badge]: https://travis-ci.org/eush77/fzip.svg
 [travis]: https://travis-ci.org/eush77/fzip
-[david-badge]: https://david-dm.org/eush77/fzip.png
+[travis-badge]: https://travis-ci.org/eush77/fzip.svg
+[codeclimate]: https://codeclimate.com/github/eush77/fzip
+[codeclimate-badge]: https://codeclimate.com/github/eush77/fzip/badges/gpa.svg
 [david]: https://david-dm.org/eush77/fzip
-[david-dev-badge]: https://david-dm.org/eush77/fzip/dev-status.png
-[david-dev]: https://david-dm.org/eush77/fzip#info=devDependencies
+[david-badge]: https://david-dm.org/eush77/fzip.png
 
 Zip collections and map or iterate over the result at once. Combination of `zip` and `map`, or `zip` and `forEach`.
 
